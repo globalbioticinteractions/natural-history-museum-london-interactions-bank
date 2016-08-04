@@ -82,7 +82,7 @@
       "titles": "Importance",
       "datatype": "string"
     },{
-      "name": "InteractionRecordType",
+      "name": "basisOfRecordName",
       "titles": "InteractionRecordType",
       "datatype": "string"
     },{
