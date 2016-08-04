@@ -88,15 +88,18 @@
     },{
       "name": "referenceCitation",
       "titles": "Reference",
-      "datatype": "string"
+      "datatype": "string",
+      "default": "Ed Baker; Vincent S. Smith (2016). Dataset: NHM Interactions Bank. http://dx.doi.org/10.5519/0060767"
     },{
       "name": "referenceDoi",
       "titles": "ReferenceDOI",
-      "datatype": "string"
+      "datatype": "string",
+      "default": "http://dx.doi.org/10.5519/0060767"
     },{
       "name": "referenceUrl",
       "titles": "Reference Page",
-      "datatype": "string"
+      "datatype": "string",
+      "default": "http://dx.doi.org/10.5519/0060767"
     },{
       "name": "Notes",
       "titles": "Notes",
