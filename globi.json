@@ -22,11 +22,11 @@
       "titles": "Species1Name",
       "datatype": "string"
     },{
-      "name": "sourceTaxonLifeStage",
+      "name": "sourceLifeStage",
       "titles": "Species1LifeCycleStage",
       "datatype": "string"
     }, {
-      "name": "Species1OrganismPart",
+      "name": "sourceBodyPart",
       "titles": "Species1OrganismPart",
       "datatype": "string"
     },{
@@ -50,11 +50,11 @@
       "titles": "Species2Name",
       "datatype": "string"
     },{
-      "name": "targetTaxonLifeStage",
+      "name": "targetLifeStage",
       "titles": "Species2LifeCycleStage",
       "datatype": "string"
     },{
-      "name": "targetTaxonBodyPart",
+      "name": "targetBodyPart",
       "titles": "Species2OrganismPart",
       "datatype": "string"
     },{
