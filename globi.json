@@ -93,8 +93,7 @@
     },{
       "name": "referenceDoi",
       "titles": "ReferenceDOI",
-      "datatype": "string",
-      "default": "http://dx.doi.org/10.5519/0060767"
+      "datatype": "string"
     },{
       "name": "Reference Page",
       "titles": "Reference Page",
