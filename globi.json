@@ -96,7 +96,7 @@
       "datatype": "string",
       "default": "http://dx.doi.org/10.5519/0060767"
     },{
-      "name": "referenceUrl",
+      "name": "Reference Page",
       "titles": "Reference Page",
       "datatype": "string",
       "default": "http://dx.doi.org/10.5519/0060767"
