@@ -62,11 +62,11 @@
       "titles": "Species2Status",
       "datatype": "string"
     },{
-      "name": "localityId",
+      "name": "LocationUUID",
       "titles": "LocationUUID",
       "datatype": "string"
     },{
-      "name": "localityName",
+      "name": "LocationName",
       "titles": "LocationName",
       "datatype": "string"
     },{
