@@ -4,3 +4,9 @@ install:
 
 script: 
   - ./check-dataset.sh ${TRAVIS_REPO_SLUG}
+
+notifications:
+  email:
+    recipients:
+      - jhpoelen@xs4all.nl
+      - edward.baker@nhm.ac.uk
