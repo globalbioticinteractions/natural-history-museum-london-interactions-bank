@@ -10,3 +10,4 @@ notifications:
     recipients:
       - jhpoelen@xs4all.nl
       - edward.baker@nhm.ac.uk
+    on_success: always
