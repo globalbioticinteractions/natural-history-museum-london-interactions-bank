@@ -1,7 +1,7 @@
 {
   "@context": ["http://www.w3.org/ns/csvw", {"@language": "en"}],
   "rdfs:comment": ["inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/"],
-  "url": "http://data.nhm.ac.uk/api/3/action/package_show?id=nhm-ib",
+  "url": "https://data.nhm.ac.uk/api/3/action/package_show?id=nhm-ib",
   "dcterms:bibliographicCitation": "Ed Baker; Ian J. Kitching; George W. Beccaloni; Amoret Whitaker et al. (2016). Dataset: NHM Interactions Bank. Natural History Museum Data Portal (data.nhm.ac.uk). https://doi.org/10.5519/0060767",
   "headerRowCount": 1,
   "null": [""],

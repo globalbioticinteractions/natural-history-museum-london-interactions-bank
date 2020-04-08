@@ -1,13 +1,16 @@
-install: 
-  - wget "https://raw.githubusercontent.com/globalbioticinteractions/globinizer/master/check-dataset.sh" -O check-dataset.sh
-  - chmod +x check-dataset.sh
-
-script: 
-  - ./check-dataset.sh ${TRAVIS_REPO_SLUG}
-
+install:
+- wget "https://raw.githubusercontent.com/globalbioticinteractions/globinizer/master/check-dataset.sh" -O check-dataset.sh
+- chmod +x check-dataset.sh
+script:
+- "./check-dataset.sh ${TRAVIS_REPO_SLUG}"
 notifications:
   email:
     recipients:
-      - jhpoelen@xs4all.nl
-      - edward.baker@nhm.ac.uk
+    - jhpoelen@xs4all.nl
+    - edward.baker@nhm.ac.uk
     on_success: always
+env:
+  global:
+  - secure: N0s0QR1Hjg8sj+h/lEV1y14dVeKeA8vA9qR4xfEvXHpWwXaGR0XCyuiJ/eXmmHiTMhHqso75sdgxyUVkjhqEjgjAbH0CyRtwZlQTS5kd3Vgob7HCXEa3c5hbLf36j8A/JV0sjRz1EPnrqHpG0LMDcqJa0MlNlWgeSeWdXUu480pLz9yowqpbfxR1cyV7DKXCC4gND5mB6NZMQOx3k4a4+oa9MuBdtr2zUo4ayuO355uWjMX7XpL2c4NpQ4emnAbvvzxikV60bbwM+pZ/m+84kk8wrY7OjY3thLOlz0Y079TvdS5B3mKfucNQl7ROTfcz/2+lGyRyVv2s7VVfz7ZX9D42qU3QPv+FFr5ZlXydGFDxSZ5hXVEwdTzZGd8MYySTKo66RhK9kiD0cf8nshv62odO23ZF0eQDSyXwGSRsBVSIdalPUQ5sKFIMAa9F1s5SyuoNGCnSlDTmvKNtRQF6ZhLS0hTKg2bo9LToOr2T1Tl0QozcdhgN49zEl64ZvAaoyhirBFcodXKbzUVX361Pd4JZBhJ9BGxdGnEFU3mQi1zJ7skAU+jPz6hnA02LQc9fPstwwmZHM74M+e0lcA54HSz9r8fxRbBW+cKj9a01EcVXhBSE5uHo7va7LA78Thdwd3+fll3jElrIcol1sIuCqb8T27Bm8gWOQrb1pn2b/SU=
+  - secure: SD1kHB40cegqy777jE5MVxD8VwX6UFZhg2z0DXJC56cSprWJrnHkHClDomZifZHUu/VysDMeZDVFCccJXsAtxnZqYrEYKBNn6J0wM/R2hFcPcKcEYnt6OyZ0wH703Y9Og+ZtoRWVrv4BFdV7zZ7HKD4wfr3DL+eJF8RnHU+ywtrd65nG+1HlofnYLH0OTkxjHs6I0QKaIInZAuAieM0isrqMfr7w5pYuEmrTrFKftJbA3+v+X3ci6XKN1OAlpW9v9kPOc/EAihDS8ZjSYrQluZlMYSeJFxZuc+I3bWOfIRhjIZlKQy+UwShBsUr0m1XXIDlpdN/TCevhbXf03QVvd5pf151adazbyA/ZbitR37V3uWlm9FpQeVAdcYiyDBeHKQzj3qaE1H7rg9m2yEpLamFSansWCYUiDIbaUykc64K/OZ9+0OFqdgCmUyAs+gUyN2nblOvMml01gZSt4nfw9f1sjiPFt/0hSNKYyH+ZPBWY5/rSML60VgaACcLVQkADxBk9bcA5k2lwB6+nnwNbW7Cay07FdQr8SnLFfXSD42G0kvdXTrsgi1nJ5HqPY0zhQqAUf0NWzSpCzgh0vAwvVBRAQqd01Gj/wUHNODz/EDjOMvuoDJ7R9bJ6uh70qifdhy1hwLgy1aPdmWaJluPuvrr86u3tAw6djTq0K6eqaC8=
+  - secure: KEL50k3IkFGf6NooDbgjKcO3SoNE33TpsCXQ0eXGPE09jzTvaWbpG2bs2TR3gylQgb7rxXZdFSbE9Z74N0eHgK6/XaRTE3Kh6AMRHolX1IsITqcYcEg9rGszHwg95pdVdkqNa6FbU4oPjN3+sP3XhWU7GPiseeTV0TSYVjv2YS/+sgkZeQaEvZ8YRomJiO5x1N/K+3Je+LO6BVhp8Zxd5xrk3njo7ani0bpVN0wWg/AM9BXr7RWGzixBvSA56O6LpVRzqW8flLWRH9nkJ670FkIMepM1MwWsmaIkMWZ5guNcAPvz6N7fjiq0J8b2FAqAZEm0Fbwfp6bkWPUK5sQTL5Sgf1jTQgfnsDp5MdInVUPNf75gMMVyq3JEkZJRDtcFGgoW3Zx0Y/+Qx/+k8ZUC4dc0+oYj7KffvUC5whbDTPA2sXKhw9sXFNbF3SoVWuLvd3t8mxpWm9pTrSzGmVQPtu9dsIOBebyXa9LKOwrWkme71A66sWL9H43A3WGFKr5607WAH+U/4R0TRvz7htV8y+gqKvpzLNzzaqvg2yI2KX54upRj138JHY6cZWj3O1Sq9XRRo+p7AJt/gje9bvFXL48zNH9fMyx2uyUV811beqja5xflxj/I8rJXC2WL6Ycj8wTJpHgXKdVWj5buWZsLv3E89OlH7acwVSc3cp/3o4I=
